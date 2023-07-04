@@ -6,6 +6,7 @@ struct Fraction
     int denominator {};
 };
 
+// Dont return temp by reference, it's local variable hence leave a dangling reference
 Fraction getFraction() 
 {
     Fraction temp;
