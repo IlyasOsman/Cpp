@@ -5,18 +5,31 @@
 // Have your main() function print the output of countTotalItems() as well as the number of torches.
 
 #include <iostream>
+#include <array>
+#include <numeric>
 
-enum Player {
+enum ItemsType {
     health,
     torches,
     arrows,
-    max_items,
+    maxItems
 };
 
 
-int main()
-{
-    
-    return 0;
+
+using Inventory = std::array<int, ItemsType::maxItems>;
+
+int countTotalItems(const Inventory& items) {
+    return std::accumulate(items.begin(), items.end());
 }
 
+int main()
+{
+    Inventory items { 2, 5, 10};
+
+    std::cout << "Player has " << countTotalItems(items) << " items." << '\n';
+
+    std::cout << items[ItemsType::torches] << '\n';
+
+    return 0;
+}
