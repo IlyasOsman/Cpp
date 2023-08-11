@@ -4,8 +4,18 @@
 
 /bin/*
 
-# Ignore compiled executable files
+
+# Ignore all files by default
 *
+
+# Unignore specific file types
 !*.cpp
 !*.h
 !*.md
+
+# Ignore files without extensions
+!*/
+!*/**
+!*.*
+
+
