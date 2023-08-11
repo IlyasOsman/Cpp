@@ -3,3 +3,9 @@
 *.o
 
 /bin/*
+
+# Ignore compiled executable files
+*
+!*.cpp
+!*.h
+!*.md
