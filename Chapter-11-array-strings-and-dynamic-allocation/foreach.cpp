@@ -12,9 +12,6 @@ int main()
 
     bool found{ false };
 
-    // We will be explicit about expecting `name` to be a std::string_view here
-    // That way if `names` is ever changed to an expensive to copy type (like std::string)
-    // We won't end up making expensive copies.
     for (std::string_view name : names)
     {
         if (name == username)
