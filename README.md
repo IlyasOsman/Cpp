@@ -16,6 +16,6 @@ C++ is a powerful and versatile programming language used in a wide range of app
 
 ## Get Started
 
-Feel free to explore the code and projects in this repository. If you're new to C++ or looking to improve your skills, you might find the resources on [LearnCpp.com](https://learncpp.com) combined with this repository a valuable way to learn and practice.
+Feel free to explore the code and projects in this repository. If you're new to C++ or looking to improve your skills, you might find the resources on [LearnCpp.com](https://learncpp.com) as valuable way to learn and practice.
 
 Happy coding!
